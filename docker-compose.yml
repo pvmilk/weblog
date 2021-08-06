@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  server:
+    container_name: github-page
+    image: jekyll-github:latest
+    build:
+      context: ./
+    volumes:
+      - ./docs:/apps
+    ports:
+      - "4000:4000"
+    command: bundle exec jekyll serve
+  builder:
+    container_name: github-build
+    image: jekyll-github:latest
+    build:
+      context: ./
+    volumes:
+      - ./:/project
+    working_dir: /project
+    command: /bin/bash
