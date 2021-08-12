@@ -1,5 +1,5 @@
 # weblog
-Repository for blogging https://ma2ai.github.io/weblog
+Repository for blogging https://pvmilk.github.io/weblog
 
 ## General Infos
 - The page is originally create by following the [github official guide](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll).
