@@ -16,4 +16,4 @@ COPY ./Gemfile  ./
 
 RUN bundle install
 
-CMD bundle exec jekyll serve
+CMD bundle exec jekyll serve --livereload
