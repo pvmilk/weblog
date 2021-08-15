@@ -17,18 +17,24 @@ title: Milk Phongtharin's Blog
 email: pvmilk@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   ...
+github_username: pvmilk
+twitter:
+  username: "milLII3yway"
+
 baseurl: "/weblog" # the subpath of your site, e.g. /blog
 url: "https://pvmilk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: milLII3yway
-github_username:  pvmilk
+
 
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
 
-# theme: minima
 remote_theme: mmistakes/so-simple-theme@3.2.0
 
 regenerate: true
@@ -46,19 +52,79 @@ incremental: true
 #   - vendor/gems/
 #   - vendor/ruby/
 
-
 #
 # Theme specific configure
 # Ref: https://github.com/mmistakes/so-simple-theme
 #
 
-
 # The theme defaults to text in English (en, en-US, en-GB).
-locale: "en"
+locale: "en-US"
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 10
+paginate_path: /page:num/
 
 # Readtime
 read_time: true
 words_per_minute: 200
 
-search_full_content: true
+# Search
+search_full_content: false  # can have performance implications for large sites
 
+# Site Author
+# Author information can centralized in _data/authors.yml
+author: pvmilk
+
+# Footer Links
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/milLII3yway
+    icon: fab fa-twitter-square
+  - title: GitHub
+    url: https://github.com/pvmilk
+    icon: fab fa-github-square
+  - title: Feed
+    url: feed.xml
+    icon: fas fa-rss-square
+
+mathjax:
+  enable: true
+  combo: "tex-svg"
+  tags: "ams"
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+
+# Build settings
+permalink: /:categories/:title/
+
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# Front Matter Defaults
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comments: true
+      share: true
+  # Recipe defaults
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: post
+      comments: true
+      share: true
