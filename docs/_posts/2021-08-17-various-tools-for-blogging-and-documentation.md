@@ -2,18 +2,19 @@
 layout: post
 title:  "Various Tools for Blogging and Documentation"
 date:   2021-08-17 12:00:00 +0700
-categories: web, system
-tags: blogging, jekyll
+categories: web system
+tags: blogging jekyll
 ---
+
+Recently, I have been working on various projects, both technical and personal. Before doing anything, I usually searched and see how people is doing things. I ended up having a lot of references, knowledge and ideas. However, I usually jot them down in the notepad, both digital and physical, and at some point they are just disappear. 
+
+I think this might be time for me to start my personal blogging somewhere. I found out that there are many solutions available online and here are the list and some brief infos on them. 
+
 <!---
 Images are downloaded from
 * https://commons.wikimedia.org/wiki/File:Octicons-mark-github.svg
 * https://worldvectorlogo.com/ja/logo/jekyll
 -->
-
-Recently, I have been working on various projects, both technical and personal. Before doing anything, I usually searched and see how people is doing things. I ended up having a lot of references, knowledge and ideas. However, I usually jot them down in the notepad, both digital and physical, and at some point they are just disappear. 
-
-I think this might be time for me to start my personal blogging somewhere. I found out that there are many solutions available online and here are the list and some brief infos on them. 
 
 ## Jekyll + Github Pages
 
