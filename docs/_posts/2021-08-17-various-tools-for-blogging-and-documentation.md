@@ -37,6 +37,7 @@ In short, please refer to Jekyll for setup the local page/blog, then push it to 
 	* [so simple theme](https://github.com/mmistakes/so-simple-theme)
 	* [mundana-theme-jekyll](https://github.com/wowthemesnet/mundana-theme-jekyll)
 	* [mediumish-theme-jekyll](https://github.com/wowthemesnet/mediumish-theme-jekyll)
+	* [jekyll-theme-chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)
 	* [type theme](https://github.com/rohanchandra/type-theme)
 	* [moonwalk](https://github.com/abhinavs/moonwalk)
 	* [monophase](https://github.com/zivhub/monophase)
